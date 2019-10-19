@@ -14,8 +14,9 @@ body {
   color: #f63;
 }
 p {
-  font-size: 14px;
+  font-size: 19px;
   line-height: 1.75;
+  margin: 33px 0 10px;
 }
 p.large {
   font-size: 16px;
@@ -461,7 +462,7 @@ section h3.section-subheading {
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .timeline:before {
