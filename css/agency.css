@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: #ffffff;
 }
 .text-primary {
   color: #f63;
@@ -51,7 +51,14 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #eeeeee;
+  background: rgba(41, 87, 190, 0.2);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -102,23 +109,23 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
-  background-color: #f63;
-  border-color: #f63;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: none;
   font-weight: 700;
   border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 16px;
+  background: transparent;
+  padding: 12px 26px;
+  text-transform: uppercase;
+  border: 2px solid #fe6937;
 }
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: white;
-  background-color: #f63;
-  border-color: #f63;
+  color: #0d0640;
+  background-color: #ffcf65;
+  border-color: #ffffff;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -152,7 +159,7 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #f63;
+  color: #ffffff;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
@@ -179,24 +186,27 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 1px;
-  color: white;
+  border-bottom: 2px solid transparent;
+  color: #ffffff;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #f63;
+  color: #ffffff;
   outline: none;
+  border-bottom: 2px solid #f63;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: #f63;
+  color: #ff6633;
+  background: transparent;
+  border-bottom: 2px solid;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #f63;
+  color: #0e0640 !important;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -204,7 +214,7 @@ fieldset[disabled] .btn-xl.active {
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    transition: padding 0.5s;
     border: none;
   }
   .navbar-custom .navbar-brand {
@@ -219,11 +229,12 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: rgba(255, 255, 255, 1);
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
+    color: #0e0640;
   }
 }
 header {
@@ -237,10 +248,15 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+  position: relative;
 }
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -285,6 +301,7 @@ section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -296,7 +313,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
@@ -422,7 +439,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #f63;
+  background-color: #ffcf66;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -522,6 +539,8 @@ section h3.section-subheading {
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
+    background: rgba(204, 204, 204, 0.2);
+    border-radius: 8px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -555,8 +574,8 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-color: #041D33;
+  /* background-image: url('../img/map-image.png'); */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -755,8 +774,52 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  font-size: 16px;
+  color: #000000;
 }
-
+/* 
 tr:nth-child(even) {
   background-color: #dddddd;
+} */
+
+
+.navbar-custom.affix .nav li a {
+  color: #0e0640;
+}
+
+#services {
+  background: #38226D;
+}
+
+.timeline-panel p {
+  color: #0e0640;
+}
+
+.clients h3 {
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+#portfolio h2 {
+  color: #0e0640;
+  padding: 28px 0;
+}
+
+#portfolio {
+  padding-bottom: 0;
+}
+
+.skill-area {
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 3px 0px 9px 0px #808080;
+}
+
+.timeline-image h4 {
+  color: #0e0640;
+}
+
+#contactForm p {
+  color: #ffffff;
+  margin-top: 10px;
 }
