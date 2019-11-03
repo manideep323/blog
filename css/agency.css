@@ -110,12 +110,10 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 20px;
   background: transparent;
   padding: 12px 26px;
-  text-transform: uppercase;
   border: 2px solid #fe6937;
 }
 .btn-xl:hover,
